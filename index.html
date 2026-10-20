@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#101c2c">
+    <meta name="description"
+        content="Discover premium car rentals with Stackly Drive. Flexible booking, transparent prices, and a fleet for every journey.">
+    <title>Stackly Drive | Find your next ride</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="js/navigation.js"></script>
+    <script defer src="js/animations.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/rental.js"></script>
+</head>
+
+<body><a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="container nav"><a class="brand" href="index.html" aria-label="Stackly Drive home"><span
+                    class="logo">S
+</span>STACKLY<span class="brand-light-text">DRIVE.</span></a><button class="menu"
+                aria-label="Open navigation" aria-expanded="false">☰</button>
+            <nav id="nav"><a class="active" href="#home">Home</a><a href="#fleet">Our fleet</a><a href="#why-us">Why
+                    Stackly</a><a href="#how-it-works">How it works</a><a class="nav-cta" href="#booking">Book a car
+                    <span>↗</span></a></nav>
+        </div>
+    </header>
+    <main id="main">
+        <section class="hero" id="home">
+            <div class="hero-photo" role="img" aria-label="Premium car driving on an open road"></div>
+            <div class="hero-shade"></div>
+            <div class="container hero-content">
+                <div class="hero-copy">
+                    <p class="eyebrow"><span class="eyebrow-line"></span> YOUR JOURNEY, YOUR RULES</p>
+                    <h1 class="hero-title">The road is<br>yours to <em>own.</em></h1>
+                    <p class="lead">From quick city runs to wide-open-road weekends, find the right car for wherever
+                        life takes you.</p>
+                    <div class="hero-actions"><a class="btn primary" href="#booking">Find your ride <span>↗</span></a><a
+                            class="hero-link" href="#fleet">Explore the fleet <span>↓</span></a></div>
+                    <div class="hero-proof">
+                        <div class="proof-icon">✦</div>
+                        <p><strong>Easy booking. No guesswork.</strong><small>Clear prices, flexible options, more
+                                freedom.</small></p>
+                    </div>
+                </div>
+                <div class="hero-side-note"><span>01 / 04</span><i></i><span>MADE FOR THE WAY YOU MOVE</span></div>
+            </div>
+            <div class="hero-bottom">
+                <div class="container hero-bottom-inner"><span><b>✦</b> Premium & everyday cars</span><span><b>✦</b>
+                        Flexible rental periods</span><span><b>✦</b> Straightforward pricing</span><span
+                        class="scroll-note">SCROLL TO EXPLORE ↓</span></div>
+            </div>
+        </section>
+        <section class="booking-wrap" id="booking">
+            <div class="container">
+                <form class="booking-panel" id="booking-form">
+                    <div class="booking-title"><span class="booking-symbol">⌖</span>
+                        <div>
+                            <h2>Find your next ride</h2>
+                            <p>Set your trip details to get started.</p>
+                        </div>
+                    </div>
+                    <div class="booking-fields"><label><span>Pick-up location</span>
+                            <div class="field-control"><span>⌖</span><input name="location"
+                                    placeholder="City, airport or address" required></div>
+                        </label><label><span>Pick-up date</span>
+                            <div class="field-control"><span>▦</span><input name="pickup" type="date" required></div>
+                        </label><label><span>Return date</span>
+                            <div class="field-control"><span>▦</span><input name="return" type="date" required></div>
+                        </label><label><span>Car type</span>
+                            <div class="field-control"><span>◇</span><select name="type">
+                                    <option value="all">All vehicles</option>
+                                    <option value="economy">Economy</option>
+                                    <option value="suv">SUV</option>
+                                    <option value="luxury">Luxury</option>
+                                    <option value="electric">Electric</option>
+                                </select></div>
+                        </label><button class="btn booking-btn" type="submit">Search cars <span>↗</span></button></div>
+                    <p class="form-message" id="booking-message" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+        <section class="section fleet-section" id="fleet">
+            <div class="container">
+                <div class="section-heading" data-aos="fade-up">
+                    <div>
+                        <p class="eyebrow dark-eyebrow">01 / THE FLEET</p>
+                        <h2>Find your kind<br>of <em>drive.</em></h2>
+                    </div>
+                    <div class="heading-side">
+                        <p>Well-chosen wheels for every plan. Pick your pace, bring your playlist, and let the good
+                            miles roll.</p><a class="text-link" href="#booking">Find your match <span>↗</span></a>
+                    </div>
+                </div>
+                <div class="fleet-grid">
+                    <article class="car-card" data-category="economy" data-aos="fade-up">
+                        <div class="car-image car-economy"><span class="car-tag">CITY FAVOURITE</span><img
+                                src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1000&q=85"
+                                alt="Modern sporty coupe parked outdoors" loading="lazy"></div>
+                        <div class="car-info">
+                            <div class="car-title-row">
+                                <div>
+                                    <p class="car-type">ECONOMY / COMPACT</p>
+                                    <h3>City Sprint</h3>
+                                </div>
+                                <div class="car-price"><strong>₹1,499</strong><small>/ day*</small></div>
+                            </div>
+                            <div class="car-specs"><span>♙ 5 seats</span><span>⚙ Automatic</span><span>⌁ Petrol</span>
+                            </div><a class="car-book" href="#booking" data-car="economy">Explore this car
+                                <span>↗</span></a>
+                        </div>
+                    </article>
+                    <article class="car-card" data-category="suv" data-aos="fade-up" data-aos-delay="100">
+                        <div class="car-image car-suv"><span class="car-tag">ROOM FOR MORE</span><img
+                                src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1000&q=85"
+                                alt="Premium SUV ready for a road trip" loading="lazy"></div>
+                        <div class="car-info">
+                            <div class="car-title-row">
+                                <div>
+                                    <p class="car-type">SUV / ADVENTURE</p>
+                                    <h3>Weekend Roamer</h3>
+                                </div>
+                                <div class="car-price"><strong>₹2,799</strong><small>/ day*</small></div>
+                            </div>
+                            <div class="car-specs"><span>♙ 7 seats</span><span>⚙ Automatic</span><span>⌁ Diesel</span>
+                            </div><a class="car-book" href="#booking" data-car="suv">Explore this car <span>↗</span></a>
+                        </div>
+                    </article>
+                    <article class="car-card" data-category="luxury" data-aos="fade-up" data-aos-delay="200">
+                        <div class="car-image car-luxury"><span class="car-tag">ARRIVE IN STYLE</span><img
+                                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=85"
+                                alt="Elegant luxury sports car" loading="lazy"></div>
+                        <div class="car-info">
+                            <div class="car-title-row">
+                                <div>
+                                    <p class="car-type">PREMIUM / LUXURY</p>
+                                    <h3>Executive Line</h3>
+                                </div>
+                                <div class="car-price"><strong>₹5,499</strong><small>/ day*</small></div>
+                            </div>
+                            <div class="car-specs"><span>♙ 4 seats</span><span>⚙ Automatic</span><span>⌁ Petrol</span>
+                            </div><a class="car-book" href="#booking" data-car="luxury">Explore this car
+                                <span>↗</span></a>
+                        </div>
+                    </article>
+                </div>
+                <p class="fine-print">*Illustrative starting prices for the demo. Final rates, availability, insurance
+                    and deposit terms must be configured before launch.</p>
+                <div class="fleet-empty" id="fleet-empty" hidden>No vehicles match that category in this sample fleet.
+                    Try “All vehicles” or choose another type.</div>
+            </div>
+        </section>
+        <section class="why-section section" id="why-us">
+            <div class="container why-grid">
+                <div class="why-visual" data-aos="fade-right"><img
+                        src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1200&q=85"
+                        alt="Driver enjoying an open road" loading="lazy">
+                    <div class="visual-label"><span>GO WHERE LIFE TAKES YOU</span><b>More road.<br><em>Less
+                                routine.</em></b></div>
+                    <div class="round-stamp">YOUR NEXT<br>CHAPTER ↗</div>
+                </div>
+                <div class="why-copy" data-aos="fade-left">
+                    <p class="eyebrow">02 / THE STACKLY DIFFERENCE</p>
+                    <h2>Good trips start<br>with <em>good choices.</em></h2>
+                    <p class="section-copy">Renting a car should feel like opening a door, not opening a spreadsheet. We
+                        keep the experience clear, considered and built around your plans.</p>
+                    <div class="benefit-list">
+                        <div><span>01</span>
+                            <p><strong>Pricing that makes sense</strong><small>Know what you're looking at, with clear
+                                    terms before you book.</small></p><b>↗</b>
+                        </div>
+                        <div><span>02</span>
+                            <p><strong>A car for your kind of day</strong><small>From compact city cars to roomy weekend
+                                    favourites.</small></p><b>↗</b>
+                        </div>
+                        <div><span>03</span>
+                            <p><strong>Booking without the maze</strong><small>Simple steps help you spend less time
+                                    planning and more time going.</small></p><b>↗</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section process-section" id="how-it-works">
+            <div class="container">
+                <div class="section-heading" data-aos="fade-up">
+                    <div>
+                        <p class="eyebrow dark-eyebrow">03 / HOW IT WORKS</p>
+                        <h2>Three steps.<br><em>Then you're off.</em></h2>
+                    </div>
+                    <p class="process-intro">A little planning, a few clicks, and a whole lot of possibilities ahead.
+                    </p>
+                </div>
+                <div class="steps-grid">
+                    <article data-aos="fade-up">
+                        <div class="step-top"><span>01</span><span>⌖</span></div>
+                        <div class="step-line"></div>
+                        <h3>Choose your car</h3>
+                        <p>Pick the vehicle that fits your route, your crew and your budget.</p>
+                    </article>
+                    <article data-aos="fade-up" data-aos-delay="100">
+                        <div class="step-top"><span>02</span><span>▦</span></div>
+                        <div class="step-line"></div>
+                        <h3>Set your dates</h3>
+                        <p>Tell us where and when. Check the details before confirming.</p>
+                    </article>
+                    <article data-aos="fade-up" data-aos-delay="200">
+                        <div class="step-top"><span>03</span><span>↗</span></div>
+                        <div class="step-line"></div>
+                        <h3>Hit the road</h3>
+                        <p>Collect your keys, settle in, and make the journey yours.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="quote-section">
+            <div class="container quote-inner" data-aos="fade-up"><span class="quote-mark">“</span>
+                <p class="eyebrow">04 / GOOD MILES, GOOD WORDS</p>
+                <blockquote>“The best part of a road trip is the freedom to change your mind halfway there.”
+                </blockquote>
+                <div class="quote-credit"><span>SD</span>
+                    <p><strong>The Stackly Drive mindset</strong><small>Our sample brand quote</small></p>
+                </div><span class="quote-orbit"></span>
+            </div>
+        </section>
+        <section class="final-cta">
+            <div class="container final-cta-inner" data-aos="fade-up">
+                <div>
+                    <p class="eyebrow">YOUR NEXT CHAPTER IS OUT THERE</p>
+                    <h2>Pick a direction.<br><em>We'll bring the wheels.</em></h2>
+                </div><a href="#booking" class="btn light-btn">Find your ride <span>↗</span></a>
+                <div class="cta-star">✳</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand"><a class="brand brand-footer" href="index.html"><span
+                        class="logo">S</span>stackly<span class="brand-light-text">drive.</span></a>
+                <p>Better journeys begin with a better way to rent. Find your car, make a plan, and leave room for the
+                    unexpected.</p><span class="footer-chip">YOUR JOURNEY, YOUR RULES</span>
+            </div>
+            <div class="footer-col">
+                <h3>Explore</h3><a href="#fleet">Our fleet</a><a href="#why-us">Why Stackly</a><a
+                    href="#how-it-works">How it works</a>
+            </div>
+            <div class="footer-col">
+                <h3>Plan a trip</h3><a href="#booking">Book a car</a><a href="#booking">Rental dates</a><a
+                    href="#booking">Find a vehicle</a>
+            </div>
+            <div class="footer-col">
+                <h3>More</h3><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a
+                    href="terms.html">Rental terms</a>
+            </div>
+        </div>
+        <div class="container footer-bottom"><span>© 2026 Stackly Drive. Demo homepage.</span><span>Made for the miles
+                ahead <b>✦</b></span></div>
+    </footer>
+</body>
+
+</html>
